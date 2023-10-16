@@ -31,7 +31,13 @@ public class Persona {
         return this.annoNascita;
     }
 
+    public int getnScarpe() {
+        return this.nScarpe;
+    }
 
+    public void setnScarpe(int nScarpe) {
+        this.nScarpe = nScarpe;
+    }
 
     public Object clone(){
         return new Persona(this.nome, this.sesso, this.annoNascita);
