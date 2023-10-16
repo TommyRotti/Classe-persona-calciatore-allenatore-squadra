@@ -28,10 +28,7 @@ public class Persona {
     }
     public String toString(){
         String rit = "{\n";
-        rit += "nome: "+this.nome+"\n";
-        rit += "sesso: "+this.sesso+"\n";
-        rit += "anno di nascita: "+this.annoNascita+"\n";
-        rit += "}";
+        rit += this.toStringInner();
         return rit;
     }
 
