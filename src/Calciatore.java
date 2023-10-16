@@ -5,5 +5,8 @@ public class Calciatore extends Persona{
     public Calciatore(String nome, String sesso, int annoNascita,
                       String ruolo, int nMaglia, int nGol) {
         super(nome, sesso, annoNascita);
+        this.nGol = nGol;
+        this.nMaglia = nMaglia;
+        this.ruolo = ruolo;
     }
 }
