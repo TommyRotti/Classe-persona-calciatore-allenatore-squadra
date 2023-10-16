@@ -12,11 +12,7 @@ public class Calciatore extends Persona{
 
     public String toString(){
         String rit = "{\n";
-        rit += "Persona: \n"+super.toStringInner();
-        rit += "\nruolo: "+this.ruolo+"\n";
-        rit += "nMaglia: "+this.nMaglia+"\n";
-        rit += "nGol: "+this.nGol+"\n";
-        rit += "}";
+        rit += this.toStringInner();
         return rit;
     }
     public String toStringInner(){
