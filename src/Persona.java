@@ -1,17 +1,19 @@
 public class Persona {
     private String nome, sesso;
-    private int annoNascita;
+    private int annoNascita, nScarpe;
 
-    public Persona(String nome, String sesso, int annoNascita){
+    public Persona(String nome, String sesso, int annoNascita, int nScarpe){
         this.nome = nome;
         this.annoNascita = annoNascita;
         this.sesso = sesso;
+        this.nScarpe = nScarpe;
     }
 
     public Persona(Persona persona) {
         this.nome = persona.nome;
         this.annoNascita = persona.annoNascita;
         this.sesso = persona.sesso;
+        this.nScarpe = persona.nScarpe;
     }
 
     public String getSesso() {
@@ -28,6 +30,8 @@ public class Persona {
     public int getAnnoNascita() {
         return this.annoNascita;
     }
+
+
 
     public Object clone(){
         return new Persona(this.nome, this.sesso, this.annoNascita);
