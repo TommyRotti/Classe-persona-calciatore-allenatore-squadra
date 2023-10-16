@@ -11,10 +11,12 @@ public class Calciatore extends Persona{
     }
 
     public Calciatore(Calciatore calciatore) {
+        //chiamo il costruttore per copia di Persona
+        //Calciatore is a Persona
         super(calciatore);
-        this.nGol = nGol;
-        this.nMaglia = nMaglia;
-        this.ruolo = ruolo;
+        this.nGol = calciatore.nGol;
+        this.nMaglia = calciatore.nMaglia;
+        this.ruolo = calciatore.ruolo;
     }
     public int getnGol() {
         return this.nGol;
@@ -41,10 +43,10 @@ public class Calciatore extends Persona{
     }
 
     public Object clone(){
-        Calciatore c = (Calciatore) super.clone();
-        c.ruolo=this.ruolo;
+        Calciatore c = new Calciatore(this);
+        /*c.ruolo=this.ruolo;
         c.nMaglia=this.nMaglia;
-        c.nGol=this.nGol;
+        c.nGol=this.nGol;*/
         return c;
     }
     public String toString(){
