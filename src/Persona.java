@@ -34,4 +34,12 @@ public class Persona {
         rit += "}";
         return rit;
     }
+
+    public String toStringInner(){
+        String rit = "";
+        rit += "nome: "+this.nome+"\n";
+        rit += "sesso: "+this.sesso+"\n";
+        rit += "anno di nascita: "+this.annoNascita+"\n";
+        return rit;
+    }
 }
