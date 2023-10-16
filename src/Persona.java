@@ -8,7 +8,11 @@ public class Persona {
         this.sesso = sesso;
     }
 
-
+    public Persona(Persona persona) {
+        this.nome = persona.nome;
+        this.annoNascita = persona.annoNascita;
+        this.sesso = persona.sesso;
+    }
 
     public String getSesso() {
         return this.sesso;
