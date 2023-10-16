@@ -10,6 +10,37 @@ public class Calciatore extends Persona{
         this.ruolo = ruolo;
     }
 
+    public int getnGol() {
+        return this.nGol;
+    }
+
+    public void setnGol(int nGol) {
+        this.nGol = nGol;
+    }
+
+    public String getRuolo() {
+        return this.ruolo;
+    }
+
+    public void setRuolo(String ruolo) {
+        this.ruolo = ruolo;
+    }
+
+    public int getnMaglia() {
+        return this.nMaglia;
+    }
+
+    public void setnMaglia(int nMaglia) {
+        this.nMaglia = nMaglia;
+    }
+
+    public Object clone(){
+        Calciatore c = (Calciatore) super.clone();
+        c.ruolo=this.ruolo;
+        c.nMaglia=this.nMaglia;
+        c.nGol=this.nGol;
+        return c;
+    }
     public String toString(){
         String rit = "{\n";
         rit += this.toStringInner();
