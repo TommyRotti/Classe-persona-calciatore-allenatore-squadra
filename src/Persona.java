@@ -40,7 +40,7 @@ public class Persona {
     }
 
     public Object clone(){
-        return new Persona(this.nome, this.sesso, this.annoNascita);
+        return new Persona(this.nome, this.sesso, this.annoNascita, this.nScarpe);
     }
     public String toString(){
         String rit = "{\n";
@@ -53,6 +53,7 @@ public class Persona {
         rit += "nome: "+this.nome+"\n";
         rit += "sesso: "+this.sesso+"\n";
         rit += "anno di nascita: "+this.annoNascita;
+        rit += "numero Scarpe: "+this.nScarpe;
         return rit;
     }
 }
