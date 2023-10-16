@@ -8,6 +8,20 @@ public class Persona {
         this.sesso = sesso;
     }
 
+    public String getSesso() {
+        return this.sesso;
+    }
+
+    public void setSesso(String sesso) {
+        this.sesso = sesso;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+    public int getAnnoNascita() {
+        return this.annoNascita;
+    }
     public String toString(){
         String rit = "{\n";
         rit += "nome: "+this.nome+"\n";
