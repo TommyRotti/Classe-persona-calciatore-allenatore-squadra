@@ -8,5 +8,8 @@ public class Main {
         Calciatore c = new Calciatore("G", "Masculo", 2007, "Panchinaro", 17, 0);
         System.out.println("\n");
         System.out.println(c.toString());
+        Calciatore c2 = (Calciatore) c.clone();
+        c2.setRuolo("Porta Borraccie");
+        System.out.println(c2.toString());
     }
 }
