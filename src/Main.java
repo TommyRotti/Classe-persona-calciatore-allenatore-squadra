@@ -6,5 +6,7 @@ public class Main {
         p2.setSesso("Fimmina");
         System.out.println(p2.toString());
         Calciatore c = new Calciatore("G", "Masculo", 2007, "Panchinaro", 17, 0);
+        System.out.println("\n");
+        System.out.println(c.toString());
     }
 }
