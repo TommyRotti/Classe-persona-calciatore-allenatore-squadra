@@ -10,6 +10,12 @@ public class Calciatore extends Persona{
         this.ruolo = ruolo;
     }
 
+    public Calciatore(Calciatore calciatore) {
+        super(calciatore);
+        this.nGol = nGol;
+        this.nMaglia = nMaglia;
+        this.ruolo = ruolo;
+    }
     public int getnGol() {
         return this.nGol;
     }

@@ -8,6 +8,8 @@ public class Persona {
         this.sesso = sesso;
     }
 
+
+
     public String getSesso() {
         return this.sesso;
     }
