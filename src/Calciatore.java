@@ -2,9 +2,9 @@ public class Calciatore extends Persona{
 
     private String ruolo;
     private int nMaglia, nGol;
-    public Calciatore(String nome, String sesso, int annoNascita,
+    public Calciatore(String nome, String sesso, int annoNascita, int nScarpe,
                       String ruolo, int nMaglia, int nGol) {
-        super(nome, sesso, annoNascita);
+        super(nome, sesso, annoNascita, nScarpe);
         this.nGol = nGol;
         this.nMaglia = nMaglia;
         this.ruolo = ruolo;
