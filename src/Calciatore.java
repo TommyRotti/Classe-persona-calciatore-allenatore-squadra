@@ -19,4 +19,13 @@ public class Calciatore extends Persona{
         rit += "}";
         return rit;
     }
+    public String toStringInner(){
+        String rit = "{\n";
+        rit += "Persona: \n"+super.toStringInner();
+        rit += "\nruolo: "+this.ruolo+"\n";
+        rit += "nMaglia: "+this.nMaglia+"\n";
+        rit += "nGol: "+this.nGol+"\n";
+        rit += "}";
+        return rit;
+    }
 }
